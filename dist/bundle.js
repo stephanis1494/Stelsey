@@ -946,14 +946,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-class Test extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Hello from React. ");
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "indexHeader"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Welcome to Stelsey "));
   }
 
 }
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Test, null), document.getElementById('test'));
+class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "indexNav"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "Home"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "Bio"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "sPortal"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "Social"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "Contact")));
+  }
+
+}
+
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Nav, null)), document.getElementById("index"));
 
 /***/ }),
 /* 15 */
