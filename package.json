@@ -4,6 +4,7 @@
   "description": "stelsey dev project",
   "main": "index.js",
   "scripts": {
+    "start:dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -20,6 +21,6 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "webpack": "^3.10.0",
-    "webpack-server": "^0.1.2"
+    "webpack-dev-server": "^2.10.0"
   }
 }
