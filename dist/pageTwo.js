@@ -18313,7 +18313,7 @@ class Submit extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       headers: new Headers({
         'Content-Type': 'application/json'
       })
-    }).then(res => res.json()).catch(error => console.log('Error:', error)).then(response => console.log('Success:', response));
+    }).then(res => res.json()).catch(error => console.log('Error:', error)).then(response => console.log('Success:', data));
     event.preventDefault();
   }
 

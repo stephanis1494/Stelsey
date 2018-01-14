@@ -61,7 +61,7 @@ class Submit extends React.Component {
       })
     }).then(res => res.json())
     .catch(error => console.log('Error:', error))
-    .then(response => console.log('Success:', response));
+    .then(response => console.log('Success:', data));
    event.preventDefault();
 	}
 
