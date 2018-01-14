@@ -18257,17 +18257,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "indexHeader"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Welcome to Stelsey "));
-  }
-
-}
-
-class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
-  render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "indexNav"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      className: "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "page-header"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "row"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+      src: "./images/example icon.png"
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Welcome to Stelsey ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
+      className: "list-inline"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "/"
     }, " Home ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "./bio"
@@ -18277,12 +18282,62 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       href: "./social"
     }, " Social ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "./contact"
-    }, " Contact"))));
+    }, " Contact")))))));
   }
 
 }
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Nav, null)), document.getElementById("index"));
+class Welcome extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "jumbotron"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, "Welcome to the home page for Chelsey & Stephen Fairris. We would love to get to know you as you use this space to get to know us.")));
+  }
+
+}
+
+class Whoweis extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "row"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+      className: "welcome",
+      src: "./images/welcome1.jpeg",
+      alt: "Endearing Photo"
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-9 col-md-9 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, "Chelsey Fairris was born and raised in Abbotsford, B.C.. She enjoys the visual arts, binge watching and smokes incredibly large amounts of the peoples weed. Stephen Fairris was born and raised in the Seattle area and enjoys making music as well as struggling to become a halfway decent front-end web developer.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "clearfix visible-lg"
+    })));
+  }
+
+}
+
+class Howwebe extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "row"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-9 col-md-9 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, "Chelsey and Stephen first met in Highschool in Abbotsford and dated during that time for a short while. After young love diminished they both went there seperate ways for almost 10 years. After a series of bad relationships they found each other again and true love blossomed. They got married on August 26, 2017 in Bellingham, Wa.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+      className: "welcome",
+      src: "./images/welcome2.jpeg"
+    }))));
+  }
+
+}
+
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Welcome, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Whoweis, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Howwebe, null)), document.getElementById("index"));
 
 /***/ })
 /******/ ]);

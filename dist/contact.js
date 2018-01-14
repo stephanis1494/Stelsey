@@ -18270,7 +18270,13 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: "indexNav"
     }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "/"
-    }, " Home")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "Bio"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "sPortal"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "Social"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    }, " Home ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      href: "./bio"
+    }, " Bio ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      href: "./sportal"
+    }, " sPortal ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      href: "./social"
+    }, " Social ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "./contact"
     }, " Contact"))));
   }

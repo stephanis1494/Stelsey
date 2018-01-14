@@ -1,13 +1,5 @@
-body {
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 100px;
-}
-
-.indexNav ul{
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-right: 40px;
+.welcome {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
 }
