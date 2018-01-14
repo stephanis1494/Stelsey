@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 26);
+/******/ 	return __webpack_require__(__webpack_require__.s = 30);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -18242,7 +18242,11 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 26 */
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18269,14 +18273,20 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       className: "indexNav"
     }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "/"
-    }, " Home")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "Bio"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "sPortal"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, "Social"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+    }, " Home ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      href: "./bio"
+    }, " Bio ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      href: "./sportal"
+    }, " sPortal ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      href: "./social"
+    }, " Social ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "./contact"
     }, " Contact"))));
   }
 
 }
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Nav, null)), document.getElementById("index"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Nav, null)), document.getElementById("social"));
 
 /***/ })
 /******/ ]);

@@ -32,5 +32,5 @@ ReactDOM.render (
     <Header/>
     <Nav/>
   </div>,
-  document.getElementById("index")
+  document.getElementById("sportal")
 );

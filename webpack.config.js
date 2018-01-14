@@ -3,8 +3,11 @@ const path = require('path');
 module.exports = {
   //: './src/index.jsx',
   entry: {
-    pageOne: './src/index.jsx',
-    pageTwo: "./src/contact.jsx"
+    index: './src/index.jsx',
+    contact: './src/contact.jsx',
+    bio: './src/bio.jsx',
+    sportal: './src/sportal.jsx',
+    social: './src/social.jsx'
 },
   output: {
     filename: '[name].js',

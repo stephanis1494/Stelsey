@@ -22,6 +22,21 @@ app.get('/', function (req, res) {
   res.sendFile('index.html')
 })
 
+//render bio page
+app.get('/bio', function (req, res) {
+  res.sendFile(__dirname + '/dist/bio.html')
+})
+
+//render sPortal page
+app.get('/sPortal', function (req, res) {
+  res.sendFile(__dirname + '/dist/sportal.html')
+})
+
+//render social page
+app.get('/social', function (req, res) {
+  res.sendFile(__dirname + '/dist/social.html')
+})
+
 //render contact page
 app.get('/contact', function (req, res) {
   res.sendFile(__dirname + '/dist/contact.html')
