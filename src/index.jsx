@@ -16,11 +16,11 @@ class Nav extends React.Component {
     return(
       <div className="indexNav">
         <ul>
-          <li>Home</li>
+          <li><a href="/"> Home</a></li>
             <li>Bio</li>
               <li>sPortal</li>
                 <li>Social</li>
-                  <li>Contact</li>
+                  <li><a href="./contact"> Contact</a></li>
         </ul>
       </div>
     );

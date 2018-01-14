@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 26);
+/******/ 	return __webpack_require__(__webpack_require__.s = 27);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -18242,7 +18242,8 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 26 */
+/* 26 */,
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18254,11 +18255,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+class Conheader extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "indexHeader"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Welcome to Stelsey "));
+      className: "contactHeader"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Contacts "));
   }
 
 }
@@ -18276,7 +18277,79 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
 }
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Nav, null)), document.getElementById("index"));
+class Submit extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: ""
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+    this.setState({
+      [name]: value
+    });
+  }
+
+  handleSubmit(event) {
+    const {
+      Name,
+      Email,
+      Message
+    } = this.state;
+    const data = {
+      Name: Name,
+      Email: Email,
+      Message: Message
+    };
+    fetch('/', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: new Headers({
+        'Content-Type': 'application/json'
+      })
+    }).then(res => res.json()).catch(error => console.log('Error:', error)).then(response => console.log('Success:', response));
+    event.preventDefault();
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "Submit",
+      id: "contactform"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("form", {
+      className: "form",
+      onSubmit: this.handleSubmit
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", null, " Name", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
+      name: "Name",
+      type: "text",
+      value: this.state.Name || '',
+      onChange: this.handleChange
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", null, " Email", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
+      name: "Email",
+      type: "text",
+      value: this.state.Email || '',
+      onChange: this.handleChange
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", null, " Message", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("textarea", {
+      name: "Message",
+      type: "text",
+      value: this.state.Message || '',
+      rows: "4",
+      cols: "50",
+      onChange: this.handleChange
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
+      type: "submit",
+      value: "submit"
+    })));
+  }
+
+}
+
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Conheader, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Nav, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Submit, null)), document.getElementById("contact"));
 
 /***/ })
 /******/ ]);
