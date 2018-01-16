@@ -18255,20 +18255,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-class Conheader extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "contactHeader"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Contacts "));
-  }
-
-}
-
-class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
-  render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "indexNav"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      className: "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "page-header"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "row"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+      src: "./images/example icon.png"
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Welcome to Stelsey ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
+      className: "list-inline"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "/"
     }, " Home ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "./bio"
@@ -18278,7 +18283,18 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       href: "./social"
     }, " Social ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "./contact"
-    }, " Contact"))));
+    }, " Contact")))))));
+  }
+
+}
+
+class Contactheader extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "jumbotron"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, "Feel free to reach out to us for anything at all. Thank you for taking time to get to know more about what makes us Stelsey.")));
   }
 
 }
@@ -18325,6 +18341,8 @@ class Submit extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
       className: "Submit",
       id: "contactform"
     }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("form", {
@@ -18347,15 +18365,15 @@ class Submit extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       rows: "4",
       cols: "50",
       onChange: this.handleChange
-    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
+    }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
       type: "submit",
       value: "submit"
-    })));
+    }))));
   }
 
 }
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Conheader, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Nav, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Submit, null)), document.getElementById("contact"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Contactheader, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Submit, null)), document.getElementById("contact"));
 
 /***/ })
 /******/ ]);

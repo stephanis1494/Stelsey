@@ -1,27 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Conheader extends React.Component {
+class Header extends React.Component {
   render() {
     return(
-      <div className="contactHeader">
-        <h1> Contacts </h1>
+      <div className="container">
+        <div className="page-header">
+          <div className="row">
+            <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <img src="./images/example icon.png"/>
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <h1> Welcome to Stelsey </h1>
+            </div>
+            <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <ul className="list-inline">
+                <li><a href="/"> Home </a></li>
+                  <li><a href="./bio"> Bio </a></li>
+                    <li><a href="./sportal"> sPortal </a></li>
+                      <li><a href="./social"> Social </a></li>
+                        <li><a href="./contact"> Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-class Nav extends React.Component {
+class Contactheader extends React.Component {
   render() {
     return(
-      <div className="indexNav">
-        <ul>
-          <li><a href="/"> Home </a></li>
-            <li><a href="./bio"> Bio </a></li>
-              <li><a href="./sportal"> sPortal </a></li>
-                <li><a href="./social"> Social </a></li>
-                  <li><a href="./contact"> Contact</a></li>
-        </ul>
+      <div className="container">
+        <div className="jumbotron">
+          <p>
+            Feel free to reach out to us for anything at all. Thank you for
+            taking time to get to know more about what makes us Stelsey.
+          </p>
+        </div>
       </div>
     );
   }
@@ -67,6 +84,7 @@ class Submit extends React.Component {
 
   render() {
   	return(
+  <div className="container">
     <div className="Submit" id="contactform">
     	<form className="form" onSubmit={this.handleSubmit}>
       	<label> Name
@@ -82,17 +100,20 @@ class Submit extends React.Component {
         <label> Message
         <br/>
           <textarea name="Message" type="text" value={this.state.Message || ''} rows="4" cols="50" onChange={this.handleChange}/>
+        <br/>
+        <br/>
         </label>
         	<input type="submit" value="submit"/>
       </form>
     </div>
+  </div>
     );
   }
 }
 ReactDOM.render (
   <div>
-    <Conheader/>
-    <Nav/>
+    <Header/>
+    <Contactheader/>
     <Submit/>
   </div>,
   document.getElementById("contact")

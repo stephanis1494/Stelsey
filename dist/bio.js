@@ -18259,17 +18259,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "indexHeader"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Welcome to Stelsey "));
-  }
-
-}
-
-class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
-  render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "indexNav"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      className: "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "page-header"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "row"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+      src: "./images/example icon.png"
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Welcome to Stelsey ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
+      className: "list-inline"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "/"
     }, " Home ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "./bio"
@@ -18279,12 +18284,27 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       href: "./social"
     }, " Social ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "./contact"
-    }, " Contact"))));
+    }, " Contact")))))));
   }
 
 }
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Nav, null)), document.getElementById("bio"));
+class Bio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      "class": "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      "class": "row"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      "class": "col-lg-6 col-md-6 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, " Chelsey ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      "class": "col-lg-6 col-md-6 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, " Stephen "))));
+  }
+
+}
+
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Bio, null)), document.getElementById("bio"));
 
 /***/ })
 /******/ ]);

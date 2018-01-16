@@ -18305,16 +18305,14 @@ class Whoweis extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
       className: "row"
     }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+      className: "col-lg-4 col-md-3 col-sm-6 col-xs-12"
     }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
       className: "welcome",
       src: "./images/welcome1.jpeg",
       alt: "Endearing Photo"
     })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "col-lg-9 col-md-9 col-sm-6 col-xs-12"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, "Chelsey Fairris was born and raised in Abbotsford, B.C.. She enjoys the visual arts, binge watching and smokes incredibly large amounts of the peoples weed. Stephen Fairris was born and raised in the Seattle area and enjoys making music as well as struggling to become a halfway decent front-end web developer.")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "clearfix visible-lg"
-    })));
+      className: "col-lg-8 col-md-9 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, "Chelsey Fairris was born and raised in Abbotsford, B.C.. She enjoys the visual arts, binge watching and smoking incredibly large amounts of the peoples weed. Stephen Fairris was born and raised in the Seattle area and enjoys making music as well as struggling to become a halfway decent front-end web developer."))));
   }
 
 }

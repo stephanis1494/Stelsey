@@ -49,19 +49,18 @@ class Whoweis extends React.Component {
     return(
       <div className="container">
         <div className="row">
-           <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+           <div className="col-lg-4 col-md-3 col-sm-6 col-xs-12">
              <img className="welcome" src="./images/welcome1.jpeg" alt="Endearing Photo"/>
               </div>
-                <div className="col-lg-9 col-md-9 col-sm-6 col-xs-12">
+                <div className="col-lg-8 col-md-9 col-sm-6 col-xs-12">
                   <p>
                     Chelsey Fairris was born and raised in Abbotsford, B.C.. She
-                    enjoys the visual arts, binge watching and smokes incredibly
+                    enjoys the visual arts, binge watching and smoking incredibly
                     large amounts of the peoples weed. Stephen Fairris was born and
                     raised in the Seattle area and enjoys making music as well as
                     struggling to become a halfway decent front-end web developer.
                   </p>
                 </div>
-                <div className="clearfix visible-lg"></div>
               </div>
             </div>
     );

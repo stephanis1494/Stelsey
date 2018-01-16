@@ -18261,17 +18261,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "indexHeader"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Welcome to Stelsey "));
-  }
-
-}
-
-class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
-  render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      className: "indexNav"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
+      className: "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "page-header"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "row"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+      src: "./images/example icon.png"
+    })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Welcome to Stelsey ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-3 col-md-3 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
+      className: "list-inline"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "/"
     }, " Home ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "./bio"
@@ -18281,12 +18286,45 @@ class Nav extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       href: "./social"
     }, " Social ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
       href: "./contact"
-    }, " Contact"))));
+    }, " Contact")))))));
   }
 
 }
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Nav, null)), document.getElementById("social"));
+class Weatherbutton extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      city: '',
+      weather: '',
+      temp: ''
+    };
+  }
+
+  componentDidMount() {
+    fetch('http://api.openweathermap.org/data/2.5/weather?lat=47.98&lon=-122.2&appid=fabc23275fd1777eeacfe4cd4a7e0047').then(response => response.json()).catch(error => console.log('Error:', error)).then(response => console.log('Success:', response)).then(response => {
+      var weather = response;
+      return weather;
+    }).then(response => {
+      this.setState({
+        city: weather.name,
+        weather: weather.weather[0].main,
+        temp: weather.main.temp
+      });
+    });
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.state);
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, " The current weather is: "), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", null, this.state.city, " ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null), this.state.weather, " ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null), this.state.temp, " ", __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", null)));
+  }
+
+}
+
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Weatherbutton, null)), document.getElementById("social"));
 
 /***/ })
 /******/ ]);
