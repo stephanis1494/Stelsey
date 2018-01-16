@@ -29,16 +29,61 @@ class Header extends React.Component {
   }
 }
 
-class Bio extends React.Component {
+class Chelseybio extends React.Component {
+  render() {
+    return (
+      <h1> Chelsey Child. </h1>
+    );
+  }
+}
+
+
+class Stephenbio extends React.Component {
+  render() {
+    return (
+      <h1> Stephen Child. </h1>
+    );
+  }
+}
+
+class Button extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false,
+      active2: false,
+    };
+    this.handleClick = this.handleClick.bind(this);
+    this.handleClick2 = this.handleClick2.bind(this);
+  }
+
+  handleClick() {
+    this.setState({
+      active: !this.state.active
+    });
+  }
+
+  handleClick2() {
+    this.setState({
+      active2: !this.state.active2
+    });
+  }
+
   render() {
     return(
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <h2> Chelsey </h2>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <button type="button" onClick={this.handleClick}>
+              Chelsey
+            </button>
+            {this.state.active && <Chelseybio/>}
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <h2> Stephen </h2>
+          <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <button type="button" onClick={this.handleClick2}>
+              Stephen
+            </button>
+            {this.state.active2 && <Stephenbio/>}
           </div>
         </div>
       </div>
@@ -46,10 +91,11 @@ class Bio extends React.Component {
   }
 }
 
+
 ReactDOM.render (
   <div>
     <Header/>
-    <Bio/>
+    <Button/>
   </div>,
   document.getElementById("bio")
 );

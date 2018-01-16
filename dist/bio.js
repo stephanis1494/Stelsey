@@ -18289,22 +18289,64 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
 }
 
-class Bio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+class Chelseybio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      "class": "container"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      "class": "row"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      "class": "col-lg-6 col-md-6 col-sm-6 col-xs-12"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, " Chelsey ")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
-      "class": "col-lg-6 col-md-6 col-sm-6 col-xs-12"
-    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", null, " Stephen "))));
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Chelsey Child. ");
   }
 
 }
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Bio, null)), document.getElementById("bio"));
+class Stephenbio extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h1", null, " Stephen Child. ");
+  }
+
+}
+
+class Button extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false,
+      active2: false
+    };
+    this.handleClick = this.handleClick.bind(this);
+    this.handleClick2 = this.handleClick2.bind(this);
+  }
+
+  handleClick() {
+    this.setState({
+      active: !this.state.active
+    });
+  }
+
+  handleClick2() {
+    this.setState({
+      active2: !this.state.active2
+    });
+  }
+
+  render() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "container"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "row"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+      type: "button",
+      onClick: this.handleClick
+    }, "Chelsey"), this.state.active && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Chelseybio, null)), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+      className: "col-lg-6 col-md-6 col-sm-6 col-xs-12"
+    }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+      type: "button",
+      onClick: this.handleClick2
+    }, "Stephen"), this.state.active2 && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Stephenbio, null))));
+  }
+
+}
+
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Header, null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Button, null)), document.getElementById("bio"));
 
 /***/ })
 /******/ ]);

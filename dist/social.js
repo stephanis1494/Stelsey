@@ -18304,7 +18304,6 @@ class Weatherbutton extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
   componentDidMount() {
     fetch('http://api.openweathermap.org/data/2.5/weather?lat=47.98&lon=-122.2&appid=fabc23275fd1777eeacfe4cd4a7e0047').then(response => response.json()).catch(error => console.log('Error:', error)).then(response => console.log('Success:', response)).then(response => {
       var weather = response;
-      return weather;
     }).then(response => {
       this.setState({
         city: weather.name,
