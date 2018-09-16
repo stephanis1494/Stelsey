@@ -1,0 +1,41 @@
+@keyframes fade {
+  0%  { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+.stelsey {
+  padding-top: 8vw;
+  position: relative;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  opacity: 1;
+  animation: fade 2s linear;
+}
+
+.stelsey-photo {
+  width: 20vw;
+  height: 20vw;
+  display: block;
+  margin: 0 auto;
+  border: 5px ridge white;
+  border-radius: 50%;
+}
+
+.stelsey-photo:hover {
+  border: 5px solid white;
+  cursor: pointer;
+}
+
+.stelsey h1 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 4vw;
+  margin-bottom: 0;
+}
+
+.stelsey h3 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 1.5vw;
+  margin-bottom: 0;
+}
