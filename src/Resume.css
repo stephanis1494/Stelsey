@@ -1,0 +1,47 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-size: 14px;
+}
+
+#header {
+  background-color: #deeaee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#header h1 {
+    font-size: 45px;
+}
+
+#header h2 {
+  color: #95a5a6;
+  font-size: 24px;
+}
+
+#col-left {
+  text-align: right;
+  color: #667292;
+}
+
+#col-center {
+  line-height: 1.5;
+}
+
+#col-right {
+}
+
+#bold {
+  font-weight: 700;
+}
+
+#top {
+  margin-top: 0px;
+  font-size: 30px;
+}
+
+#row {
+  padding-bottom: 30px;
+}
