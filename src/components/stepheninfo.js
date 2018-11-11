@@ -1,11 +1,13 @@
-import React, { Component } from "react";
-import "./stepheninfo.css";
-import "./icon.css";
-import facebook from "../static/facebook-icon.png";
-import instagram from "../static/instagram-icon.png";
-import twitter from "../static/twitter-icon.png";
-import email from "../static/email-icon.png";
-import github from "../static/github-icon.png";
+import React, { Component } from "react"
+import "./stepheninfo.css"
+import "./icon.css"
+import facebook from "../static/facebook-icon.png"
+import instagram from "../static/instagram-icon.png"
+import twitter from "../static/twitter-icon.png"
+import email from "../static/email-icon.png"
+import github from "../static/github-icon.png"
+import resume from "../static/resume.png"
+import { Link } from 'react-router-dom'
 
 export default class StephenInfo extends Component {
   render() {
@@ -31,6 +33,11 @@ export default class StephenInfo extends Component {
             <a href="mailto:Stephen@Stelsey.com">
               <img className="icon" src={email} alt="email" />
             </a>
+          </li>
+          <li>
+            <Link to="/resume">
+              <img className="icon" src={resume} alt="resume" />
+            </Link>
           </li>
         </ul>
       </div>
