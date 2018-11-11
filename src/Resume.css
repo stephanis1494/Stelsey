@@ -4,7 +4,7 @@ body {
 	margin: 0 0 80px;
 }
 a {
-	color: #2ecc71;
+	color: #f9af95;
 }
 a:focus,
 a:hover {
@@ -67,7 +67,7 @@ h4 span:first-child {
 	margin-top: 30px;
 }
 #header {
-	background: #f4f6f6;
+	background: #d4d4d6;
 	padding: 50px 0;
 	margin-bottom: 30px;
 }
@@ -76,7 +76,7 @@ h4 span:first-child {
 	font-size: 24px;
 }
 #content h3 {
-	color: #f1c40f;
+	color: #a3272f;
 	font-size: 26px;
 	margin-top: -4px;
 }
@@ -88,7 +88,7 @@ h4 span:first-child {
 	text-transform: capitalize;
 }
 #work .position,
-#volunteer .position {
+#mentorship .position {
 	font-weight: bold;
 	margin-bottom: 8px;
 }
