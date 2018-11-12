@@ -1,5 +1,7 @@
 import React from 'react'
 import './Resume.css'
+import { Link } from 'react-router-dom'
+import { Button } from 'react-bootstrap'
 
 export const Resume = () => {
   return(
@@ -277,6 +279,7 @@ export const Resume = () => {
             </div>
           </div>
         </section>
+        <Link to='/'><Button> Back </Button></Link>
       </div>
     </div>
   )

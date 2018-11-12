@@ -7,7 +7,7 @@ export const App = () => {
   return(
     <Router>
       <Switch>
-        <Route exact path='/' component={Resume} />
+        <Route exact path='/' component={Home} />
         <Route path='/resume' component={Resume} />
       </Switch>
     </Router>

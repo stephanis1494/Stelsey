@@ -34,6 +34,7 @@ class Home extends Component {
     return (
       <div className="stelsey">
         <h1> Stelsey </h1>
+        <br />
         <h3> August 26th, 2017</h3>
         <img
           className="stelsey-photo"
