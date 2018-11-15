@@ -13,22 +13,22 @@ export default class ChelseyInfo extends Component {
       <div className="chelsey-info">
         <ul>
           <li>
-            <a href="https://www.facebook.com/chelsey.fairris" target="_blank">
+            <a href="https://www.facebook.com/chelsey.fairris" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={facebook} alt="facebook" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/chelseyrae__/" target="_blank">
+            <a href="https://www.instagram.com/chelseyrae__/" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={instagram} alt="instagram" />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/stelseygreater" target="_blank">
+            <a href="https://twitter.com/stelseygreater" target="_blank" rel="noopener noreferrer">
             <img className="icon" src={twitter} alt="twitter" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/chelseyrae.photograpy" target="_blank">
+            <a href="https://www.instagram.com/chelseyrae.photograpy" target="_blank" rel="noopener noreferrer">
               <img className="icon" src={camera} alt="photography" />
             </a>
           </li>

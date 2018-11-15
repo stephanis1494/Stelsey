@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import stelsey from "./static/stelsey.jpg";
+import stelsey from "../../static/stelsey.jpg";
 import "./Home.css";
-import Chelsey from "./components/chelsey.js";
-import Stephen from "./components/stephen.js";
+import Chelsey from "../chelsey.js";
+import Stephen from "../stephen.js";
 
 class Home extends Component {
   constructor(props) {
