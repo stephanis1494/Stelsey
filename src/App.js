@@ -1,6 +1,6 @@
 import React from 'react'
-import Home from './Home.js'
-import { Resume } from './Resume.js'
+import Home from './components/views/Home.js'
+import { Resume } from './components/views/Resume.js'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 export const App = () => {
