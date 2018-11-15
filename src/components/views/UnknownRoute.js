@@ -11,7 +11,7 @@ export const UnknownRoute = () => {
       <br />
       <br />
       <h3> Don't be sad but...</h3>
-      <h4> you have found yourself in the world of the unknown. Please kick the back button below.</h4>
+      <h4> you have found yourself in the world of the unknown. Please click the back button below.</h4>
       <Link to='/'><Button> Back </Button></Link>
     </div>
   )
