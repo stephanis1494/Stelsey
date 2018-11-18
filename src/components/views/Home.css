@@ -17,12 +17,11 @@
   height: 20vw;
   display: block;
   margin: 0 auto;
-  border: 5px ridge white;
   border-radius: 50%;
 }
 
 .stelsey-photo:hover {
-  border: 5px solid white;
+  border: 1px solid white;
   cursor: pointer;
 }
 
