@@ -150,7 +150,7 @@ export const Resume = () => {
                 <h4>Highlights</h4>
                 <ul class="highlights">
                   <li class="bullet">Perform inspection and type design validation for various complex electrical assemblies as well as generation and verification of FAA air worthiness certifications.</li>
-                  <li class="bullet">Lead teams on Six Sigma projects, utilizing lean principles to improve process flow and and establish a culture of continuous improvement. </li>
+                  <li class="bullet">Lead teams on Six Sigma projects, utilizing lean principles to improve process flow and establish a culture of continuous improvement. </li>
                 </ul>
               </div>
               <div class="col-sm-12">
