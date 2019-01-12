@@ -55,7 +55,8 @@ export const Resume = () => {
           <div class="col-sm-9">
             <p>Front-end web app developer experienced in API-driven, single-page applications using React.</p>
             <p>Participating in a mentorship with a Senior Full-Stack developer with over eight years of experience.</p>
-            <p>Intern at Cointaxes, building a web application to calculate tax liability for crypto assets.</p>
+            <p>Internred at Cointaxes, building a web application to calculate tax liability for crypto assets.</p>
+            <p> Currently working freelance at Upwork, specializing in React Single-Page Applications with AWS Serverless architecture. </p>
             <p>Over ten years experience in Aerospace Quality, certified through ASQ as a Six Sigma Green Belt focusing on lean principles and continuous improvement.</p>
           </div>
         </section>
@@ -118,20 +119,20 @@ export const Resume = () => {
             <div class="row">
               <div class="col-sm-12">
                 <h4 class="strike-through">
-                  <span>Cointaxes</span>
+                  <span>Upwork</span>
                   <span class="date">
-                    04/2018 — Present
+                    12/2018 — Present
                   </span>
                 </h4>
                 <div class="position">
-                  Front-end Developer Intern
+                  Freelance Web Developer
                 </div>
                 <div class="summary">
-                  <p>Cointaxes is a New York based startup that provides solutions for calculating clients tax liabilities for crypto assets.</p>
+                  <p>Upwork, formerly Elance-oDesk, is a global freelancing platform where businesses and independent professionals connect and collaborate remotely</p>
                 </div>
                 <h4>Highlights</h4>
                 <ul class="highlights">
-                  <li class="bullet">Developing a white label web application using React, Redux and AWS Lambda to calculate clients crypto currency tax liabilities.</li>
+                  <li class="bullet"> Currently developing serverless Single-Page Application for cleint utilizing React, Graphql and AWS serverless lambda architecture.</li>
                 </ul>
               </div>
               <div class="col-sm-12">
@@ -150,7 +151,25 @@ export const Resume = () => {
                 <h4>Highlights</h4>
                 <ul class="highlights">
                   <li class="bullet">Perform inspection and type design validation for various complex electrical assemblies as well as generation and verification of FAA air worthiness certifications.</li>
-                  <li class="bullet">Lead teams on Six Sigma projects, utilizing lean principles to improve process flow and and establish a culture of continuous improvement. </li>
+                  <li class="bullet">Lead teams on Six Sigma projects, utilizing lean principles to improve process flow and establish a culture of continuous improvement. </li>
+                </ul>
+              </div>
+              <div class="col-sm-12">
+                <h4 class="strike-through">
+                  <span>Cointaxes</span>
+                  <span class="date">
+                    04/2018 — 01/2019
+                  </span>
+                </h4>
+                <div class="position">
+                  Front-end Developer Intern
+                </div>
+                <div class="summary">
+                  <p>Cointaxes is a New York based startup that provides solutions for calculating clients tax liabilities for crypto assets.</p>
+                </div>
+                <h4>Highlights</h4>
+                <ul class="highlights">
+                  <li class="bullet">Developing a white label web application using React, Redux and AWS Lambda to calculate clients crypto currency tax liabilities.</li>
                 </ul>
               </div>
               <div class="col-sm-12">
