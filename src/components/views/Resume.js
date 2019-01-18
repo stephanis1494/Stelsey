@@ -55,7 +55,7 @@ export const Resume = () => {
           <div class="col-sm-9">
             <p>Front-end web app developer experienced in API-driven, single-page applications using React.</p>
             <p>Participating in a mentorship with a Senior Full-Stack developer with over eight years of experience.</p>
-            <p>Internred at Cointaxes, building a web application to calculate tax liability for crypto assets.</p>
+            <p>Interned at Cointaxes, building a web application to calculate tax liability for crypto assets.</p>
             <p> Currently working freelance at Upwork, specializing in React Single-Page Applications with AWS Serverless architecture. </p>
             <p>Over ten years experience in Aerospace Quality, certified through ASQ as a Six Sigma Green Belt focusing on lean principles and continuous improvement.</p>
           </div>
