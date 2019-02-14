@@ -278,7 +278,7 @@ export const Resume = () => {
                   <h4>Back-End Development</h4>
                 </div>
                 <ul class="keywords">
-                  <li>PostgreSQL</li>
+                  <li>GraphQL</li>
                   <li>AWS DynamoDb</li>
                   <li>NodeJS</li>
                   <li>Express</li>
@@ -289,6 +289,7 @@ export const Resume = () => {
                   <h4>Operations</h4>
                 </div>
                 <ul class="keywords">
+                  <li>AWS Amplify w/Appsync</li>
                   <li>AWS API Gateway</li>
                   <li>AWS Lambda</li>
                   <li>AWS S3</li>
