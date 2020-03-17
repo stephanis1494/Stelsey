@@ -1,0 +1,168 @@
+import React from "react";
+import {
+  LineChart,
+  Line,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  Tooltip
+} from "recharts";
+
+const dohData = [{ name: "03-16-2020", cases: 135, deaths: 6 }];
+const cdcData = [{ name: "", cases: null, deaths: null }];
+const whoData = [
+  { name: "03-15-2020", cases: 10982, deaths: 343 },
+  { name: "03-16-2020", cases: 13903, deaths: 862 }
+];
+
+const TheRoni = () => (
+  <div
+    style={{
+      margin: "100px"
+    }}
+  >
+    {/* Depart of Health (WA) Data*/}
+    <h1
+      style={{
+        marginBottom: "40px",
+        fontFamily: "Raleway, sans-serif",
+        fontWeight: "bold"
+      }}
+    >
+      Department of Health (WA)
+    </h1>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        background: "linear-gradient(195deg, #f0f0f0, #c2d4dd)",
+        padding: "20px",
+        borderRadius: "10px"
+      }}
+    >
+      <div>
+        <h3
+          style={{
+            fontFamily: "Raleway, sans-serif",
+            marginBottom: "20px"
+          }}
+        >
+          New Cases
+        </h3>
+        <LineChart width={600} height={300} data={dohData}>
+          <Line type="monotone" dataKey="cases" stroke="red" />
+          <CartesianGrid stroke="#ccc" />
+          <Tooltip />
+          <XAxis dataKey="name" />
+          <YAxis />
+        </LineChart>
+      </div>
+      <div>
+        <h3 style={{ fontFamily: "Raleway, sans-serif", marginBottom: "20px" }}>
+          New Deaths
+        </h3>
+        <LineChart width={600} height={300} data={dohData}>
+          <Line type="monotone" dataKey="deaths" stroke="blue" />
+          <CartesianGrid stroke="#ccc" />
+          <Tooltip />
+          <XAxis dataKey="name" />
+          <YAxis />
+        </LineChart>
+      </div>
+    </div>
+
+    {/* Center for Disease Control (USA) Data*/}
+    <h1
+      style={{
+        marginBottom: "40px",
+        marginTop: "80px",
+        fontFamily: "Raleway, sans-serif",
+        fontWeight: "bold"
+      }}
+    >
+      Center for Disease Control (USA)
+    </h1>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        background: "linear-gradient(195deg, #f0f0f0, #ddeedd)",
+        padding: "20px",
+        borderRadius: "10px"
+      }}
+    >
+      <div>
+        <h3 style={{ fontFamily: "Raleway, sans-serif", marginBottom: "20px" }}>
+          New Cases
+        </h3>
+        <LineChart width={600} height={300} data={cdcData}>
+          <Line type="monotone" dataKey="cases" stroke="red" />
+          <CartesianGrid stroke="#ccc" />
+          <Tooltip />
+          <XAxis dataKey="name" />
+          <YAxis />
+        </LineChart>
+      </div>
+      <div>
+        <h3 style={{ fontFamily: "Raleway, sans-serif", marginBottom: "20px" }}>
+          New Deaths
+        </h3>
+        <LineChart width={600} height={300} data={cdcData}>
+          <Line type="monotone" dataKey="deaths" stroke="blue" />
+          <CartesianGrid stroke="#ccc" />
+          <Tooltip />
+          <XAxis dataKey="name" />
+          <YAxis />
+        </LineChart>
+      </div>
+    </div>
+
+    {/* World Health Organization Data (Global)*/}
+    <h1
+      style={{
+        marginBottom: "40px",
+        marginTop: "80px",
+        fontFamily: "Raleway, sans-serif",
+        fontWeight: "bold"
+      }}
+    >
+      World Health Organization (Global)
+    </h1>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        background: "linear-gradient(195deg, #f0f0f0, #b0aac0)",
+        padding: "20px",
+        borderRadius: "10px"
+      }}
+    >
+      <div>
+        <h3 style={{ fontFamily: "Raleway, sans-serif", marginBottom: "20px" }}>
+          New Cases
+        </h3>
+        <LineChart width={600} height={300} data={whoData}>
+          <Line type="monotone" dataKey="cases" stroke="red" />
+          <CartesianGrid stroke="#ccc" />
+          <Tooltip />
+          <XAxis dataKey="name" />
+          <YAxis />
+        </LineChart>
+      </div>
+      <div>
+        <h3 style={{ fontFamily: "Raleway, sans-serif", marginBottom: "20px" }}>
+          New Deaths
+        </h3>
+        <LineChart width={600} height={300} data={whoData}>
+          <Line type="monotone" dataKey="deaths" stroke="blue" />
+          <CartesianGrid stroke="#ccc" />
+          <Tooltip />
+          <XAxis dataKey="name" />
+          <YAxis />
+        </LineChart>
+      </div>
+    </div>
+  </div>
+);
+
+export default TheRoni;
