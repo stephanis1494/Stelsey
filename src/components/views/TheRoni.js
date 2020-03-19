@@ -8,12 +8,13 @@ import {
   Tooltip
 } from "recharts";
 
-const dohData = [{ name: "03-16-2020", cases: 135, deaths: 6 }, { name: "03-16-2020", cases: 108, deaths: 4 }];
-const cdcData = [{ name: "03-17-2020", cases: 739, deaths: 7 }];
+const dohData = [{ name: "03-16-2020", cases: 135, deaths: 6 }, { name: "03-17-2020", cases: 108, deaths: 4 }, { name: "03-18-2020", cases: 175, deaths: 14 }];
+const cdcData = [{ name: "03-17-2020", cases: 739, deaths: 7 }, { name: '03-18-2020', cases: 2812, deaths: 22}];
 const whoData = [
   { name: "03-15-2020", cases: 10982, deaths: 343 },
   { name: "03-16-2020", cases: 13903, deaths: 862 },
-  { name: "03-17-2020", cases: 11562, deaths: 475 }
+  { name: "03-17-2020", cases: 11562, deaths: 475 },
+  { name: "03-18-2020", cases: 15123, deaths: 786 }
 ];
 
 const TheRoni = () => (
