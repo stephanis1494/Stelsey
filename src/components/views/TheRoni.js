@@ -15,13 +15,17 @@ const dohData = [
   { name: "03-19", cases: 187, deaths: 8 },
   { name: "03-20", cases: 150, deaths: 9 },
   { name: "03-21", cases: 269, deaths: 11 },
-  { name: "03-22", cases: 203, deaths: 1 }
+  { name: "03-22", cases: 203, deaths: 1 },
+  { name: "03-23", cases: 225, deaths: 15 }
 ];
 const cdcData = [
   { name: "03-17", cases: 739, deaths: 7 },
   { name: "03-18", cases: 2812, deaths: 22 },
   { name: "03-19", cases: 3404, deaths: 53 },
-  { name: "03-20", cases: 4777, deaths: 51 }
+  { name: "03-20", cases: 4777, deaths: 51 },
+  { name: "03-21", cases: 6061, deaths: 44 },
+  { name: "03-22", cases: 6061, deaths: 44 },
+  { name: "03-23", cases: 6061, deaths: 44 }
 ];
 const whoData = [
   { name: "03-15", cases: 10982, deaths: 343 },
@@ -31,7 +35,8 @@ const whoData = [
   { name: "03-19", cases: 16556, deaths: 858 },
   { name: "03-20", cases: 24247, deaths: 1061 },
   { name: "03-21", cases: 32000, deaths: 1344 },
-  { name: "03-22", cases: 26069, deaths: 1600 }
+  { name: "03-22-20", cases: 26069, deaths: 1600 },
+    { name: "03-23-20", cases: 40788, deaths: 1727 }
 ];
 
 const TheRoni = () => (
